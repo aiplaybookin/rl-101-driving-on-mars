@@ -90,10 +90,10 @@ C_SENSOR_OFF= QColor("#BF616A") # Red
 # ==========================================
 CAR_WIDTH = 14     
 CAR_HEIGHT = 8   
-SENSOR_DIST = 10  # FIX ME! Distance sensors look ahead (pixels) - Currently unrealistic!
-SENSOR_ANGLE = 50    # FIX ME! Angle spread of sensors (degrees) - Too narrow!
+SENSOR_DIST = 5  # FIX ME! Distance sensors look ahead (pixels) - Currently unrealistic!
+SENSOR_ANGLE = 30    # FIX ME! Angle spread of sensors (degrees) - Too narrow!
 SPEED = 2          # FIX ME! Forward speed (pixels/step) - Way too fast!
-TURN_SPEED = 4    # FIX ME! Regular turn angle (degrees/step) - Too slow!
+TURN_SPEED = 1    # FIX ME! Regular turn angle (degrees/step) - Too slow!
 SHARP_TURN = 20      # FIX ME! Sharp turn angle for tight corners (degrees) - Too small!
 
 # ==========================================
@@ -242,6 +242,7 @@ class CarBrain:
                 val = brightness / 255.0
             sensor_vals.append(val)
             
+        #print(sensor_vals)
         dx = self.target_pos.x() - self.car_pos.x()
         dy = self.target_pos.y() - self.car_pos.y()
         dist = math.sqrt(dx*dx + dy*dy)
