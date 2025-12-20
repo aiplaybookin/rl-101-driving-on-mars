@@ -1,7 +1,8 @@
 # Neural network based Reinforcement Learning [ To Drive a car in a city map]
 
 ## Demo 
-[YouTube Link](https://youtu.be/cPFR4THke-U?si=UHgx4iVQxtIxbUWX)
+![YouTube Link](https://youtu.be/cPFR4THke-U?si=UHgx4iVQxtIxbUWX)
+
 
 ## Description
 ### Training Loop
