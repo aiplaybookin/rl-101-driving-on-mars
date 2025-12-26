@@ -79,7 +79,7 @@ This class manages the logic:
 1. Make sure your virtual environment is activated.
 2. Run the assignment script:
    ```bash
-   python citymap_assignment.py
+   python citymap.py
    ```
 3. Load the image.
 4. Place the car and targets.
